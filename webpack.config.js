@@ -56,14 +56,30 @@ module.exports = {
   //   extensions: [".tsx", ".ts", ".js"],
   // },
   plugins: [
+    // new HtmlWebpackPlugin({
+    //   template: "src/index.html",
+    // }),
+
     new HtmlWebpackPlugin({
+      filename: "index.html",
       template: "src/index.html",
+      // chunks: ["main"],
+    }),
+    new HtmlWebpackPlugin({
+      filename: "video.html",
+      template: "src/video.html",
+      // chunks: ["exampleEntry"],
+    }),
+    new HtmlWebpackPlugin({
+      filename: "photo.html",
+      template: "src/photo.html",
+      // chunks: ["exampleEntry"],
     }),
   ],
   output: {
     filename: "[name].bundle.js",
     assetModuleFilename: "[path]/[name][ext]",
-    chunkFilename: '[id].[chunkhash].js',
+    chunkFilename: "[id].[chunkhash].js",
     // path: path.resolve(__dirname, "../"),
     path: path.resolve(__dirname, "."),
     publicPath: "auto",
