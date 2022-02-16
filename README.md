@@ -1,4 +1,4 @@
-# https://mindr17.github.io/batman/
+# https://mindr17.github.io/batman/index.html
 
 ## Dev:
 
@@ -9,7 +9,7 @@ yarn start
 
 ## Lession 2
 ```
-git checkout ':/lession 2'
+git checkout ':/lession 2.2'
 ```
 ## Lession 3
 ```
